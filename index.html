@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script defer src="js/calculator.js"></script>
+        <title>계산기</title>
+    </head>
+
+    <body>
+        <header class="site-header" role="header">
+            <div class="container">
+                
+            </div>
+        </header>
+
+        <main class="site-main color-01" role="main">
+            <section>
+                <div class="container">
+                    <div class="calculator color-01">
+                        <div class="input-wrap">
+                            <input type="text" id="display" placeholder="0" onkeyup="enterkey();">
+                            <input type="text" id="result" readonly>
+                        </div>
+                        <div class="btn-wrap">
+                            <div class="btn reset-btn" onclick="reset()" colspan="2">AC</div>
+                            <div class="btn" onclick="del()">del</div>
+                            <div class="btn" onclick="add('/')">÷</div>
+                        
+                       
+                            <div class="btn number" onclick="add(7)">7</div>
+                            <div class="btn number" onclick="add(8)">8</div>
+                            <div class="btn number" onclick="add(9)">9</div>
+                            <div class="btn" onclick="add('*')">×</div>
+                        
+                       
+                            <div class="btn number" onclick="add(4)">4</div>
+                            <div class="btn number" onclick="add(5)">5</div>
+                            <div class="btn number" onclick="add(6)">6</div>
+                            <div class="btn" onclick="add('-')">-</div>
+                        
+                       
+                            <div class="btn number" onclick="add(1)">1</div>
+                            <div class="btn number" onclick="add(2)">2</div>
+                            <div class="btn number" onclick="add(3)">3</div>
+                            <div class="btn" onclick="add('+')">+</div>
+                        
+                       
+                            <div class="btn number zero-btn" colspan="2">0</div>
+                            <div class="btn" onclick="add('.')">.</div>
+                            <div class="btn result-btn" onclick="calculate()">=</div>
+                        </div>
+                           
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
