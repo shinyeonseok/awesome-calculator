@@ -4,11 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/style.css">
+
+        <!-- 폰트 불러오기 -->
+        <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script defer src="js/calculator.js"></script>
-        <title>계산기 만들기</title>
+        <title>Awesome Calculator</title>
 
         <meta name="description" content="HTML, CSS, JavaScript를 이용해서 제작한 뉴모피즘 스타일의 계산기입니다.">
         <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -16,18 +20,34 @@
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Awesome Calculator" />
         <meta property="og:description" content="HTML, CSS, JavaScript를 이용해서 제작한 뉴모피즘 스타일의 계산기입니다." />
-        <!-- <meta property="og:image" content="" />
-        <meta property="og:url" content="" />
-        <meta property="og:site_name" content="" /> -->
 
     </head>
 
     <body>
+        <!-- light-theme -->
+        <main class="site-main" role="main">
 
-        <main class="site-main color-01" role="main">
-            <section>
-                <div class="container">
-                    <div class="calculator color-01">
+            <!-- 정보 -->
+            <div class="author-info">
+                <h1 class="main-logo">
+                    <a href="http://shinyeonseok.com/" target="_blank">Shin</a>
+                </h1>
+                <div class="sns-wrap">
+                    <a href="https://www.facebook.com/shinyeonseok" target="_blank" rel="noopener noreferrer"><div class="icon facebook"></div></a>
+                    <a href="https://www.instagram.com/yeonseok_shin" target="_blank" rel="noopener noreferrer"><div class="icon instagram"></div></a>
+                    <!-- <div href="https://www.linkedin.com/in/shinyeonseok/" target="_blank" rel="noopener noreferrer"><div class="icon linkedin"></div></a> -->
+                </div>
+                <div class="text-wrap">
+                    <h2>신연석 디자이너</h2>
+                    <p>UI 디자인, 일러스트, 모션 그래픽 작업을 주로 하며, 취미로 개발을 하고 있습니다.</p>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <!-- 화면 -->
+                <div class="center">
+                    <div class="calculator">
                         <div class="input-wrap">
                             <input type="text" id="display" placeholder="0" onkeyup="enterkey();">
                             <input type="text" id="result" readonly>
@@ -63,7 +83,7 @@
                            
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
     </body>
 </html>

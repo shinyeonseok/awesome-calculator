@@ -1,34 +1,6 @@
-/* ------------------------- */
-/* Common - layout */
-/* ------------------------- */
-*{
-	box-sizing: border-box;
-}
-.site-main{
-	width: 100%;
-	height: 100vh;
-	position: relative;
-}
-section{
-	padding:60px 0;
-}
-.color-01{
-	background-color: #8acaf0;
-}
-.container{
-	width:100%;
-	max-width: 1000px;
-	padding:0 20px; /* 실제 넓이 960px - 가로폭으로 줄어들게 적용 */
-}
-a,
-a:hover{
-	text-decoration: none!important;
-}
 
-h1{
-	font-size: 24px;
-	margin-bottom:30px;
-	text-align: center;
+.site-main{
+	background-color: #8acaf0;
 }
 .calculator{
 	position: relative;
