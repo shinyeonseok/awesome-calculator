@@ -91,5 +91,11 @@ input:focus{
 /* ------------------------- */
 
 @media only screen and (max-width: 480px) {
-	/* 모바일에서 헤더 스타일 변경이나 콘텐츠 영역에 짤리는 부분은 여기서 추가 수정 */
+	.calculator{
+		max-width: 300px;
+	}
+	.btn{
+		height: 45px;
+		line-height: 45px;
+	}
 }

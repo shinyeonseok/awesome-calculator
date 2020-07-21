@@ -112,3 +112,25 @@ a:hover{
 .dark-theme .sns-wrap a .instagram {
     background-image: url(//shinyeonseok.com/wp-content/themes/shinyeonseok/svg/icon_sns_instagram_w.svg);
 }
+
+
+@media only screen and (max-width: 480px) {
+    .center {
+        transform: translate(-50%, -60%);
+    }
+    .text-wrap{
+        margin-top:12px;
+    }
+    .text-wrap h2{
+        font-size: 16px;
+        margin-bottom:6px;
+    }
+    .author-info{
+        left:0;
+        top: inherit;
+        bottom:0;
+        padding:20px;
+        border-radius: 0;
+        max-width: 100%;
+    }
+}
